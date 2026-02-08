@@ -1,0 +1,8 @@
+services:
+  mantenimiento-apache-dev:
+    build: .
+    container_name: mantenimiento-apache-dev
+    ports:
+      - "8090:80"
+    volumes:
+      - ./app:/var/www/html
